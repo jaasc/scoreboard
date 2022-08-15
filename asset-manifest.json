@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/jaasc/scoreboard/static/css/main.9bfc83fb.css",
-    "main.js": "/jaasc/scoreboard/static/js/main.48bb7d51.js",
-    "static/media/counterFont.ttf": "/jaasc/scoreboard/static/media/counterFont.da0f8a9407b64807f084.ttf",
-    "index.html": "/jaasc/scoreboard/index.html",
-    "main.9bfc83fb.css.map": "/jaasc/scoreboard/static/css/main.9bfc83fb.css.map",
-    "main.48bb7d51.js.map": "/jaasc/scoreboard/static/js/main.48bb7d51.js.map"
+    "main.css": "/scoreboard/static/css/main.d81f1d0d.css",
+    "main.js": "/scoreboard/static/js/main.48bb7d51.js",
+    "static/media/counterFont.ttf": "/scoreboard/static/media/counterFont.da0f8a9407b64807f084.ttf",
+    "index.html": "/scoreboard/index.html",
+    "main.d81f1d0d.css.map": "/scoreboard/static/css/main.d81f1d0d.css.map",
+    "main.48bb7d51.js.map": "/scoreboard/static/js/main.48bb7d51.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bfc83fb.css",
+    "static/css/main.d81f1d0d.css",
     "static/js/main.48bb7d51.js"
   ]
 }
