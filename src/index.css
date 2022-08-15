@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Counter-Font";   
+  src: url("./font/counterFont.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  background-color: #1B244A;
+  font-family: 'Counter-Font';
+}
+
+.scoreboard-section{
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20vh;
+}
+
+h1{
+  font-family: 'Verdana';
+  font-size: 40px;
+  color: #EEEEEE;
+  margin: 0;
+}
+
+.score-section{
+  text-align: center;
+}
+
+.player-score{
+  background-color: #080001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+h2{
+  color: #F94F6D;
+  font-size: 90px;
+  margin: 0;
+}
+
+.add-points{
+  width: 160px;
+}
+
+button{
+  background: transparent;
+  border: 2px solid #9AABD8;
+  color: #9AABD8;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin: 0 3px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.restart-btn{
+  display: block;
+  margin: 70px auto;
+  font-size: 30px;
+  letter-spacing: .5rem;
+  padding: 15px 30px 15px 40px;
+}
+
+.restart-btn:hover{
+  transform: scale(1.1);
+  background-color: #9AABD8;
+  color: #1B244A;
+}
+

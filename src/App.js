@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import PlayerScore from "./PlayerScore";
 
 function App() {
+  const [players, setPlayers] = useState([
+    { name: "HOME", score: 0 },
+    { name: "GUEST", score: 0 }
+  ]);
+
+  const newGame = () => {
+    setPlayers(players => players.map(players => ({...players, score: 0})
+  ))
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="scoreboard-section">
+        {players.map(player => 
+          <PlayerScore key={player.name} 
+                      player={player} 
+                      players={players}
+                      setPlayers={setPlayers}/>)}
+      </div>
+      <button className="restart-btn" onClick={newGame}>New Game</button>
+    </>
   );
 }
 
